@@ -31,16 +31,17 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
+	<script>
+		function scrollToElement() {
+		  var element = document.getElementById("target-element");
+		  element.scrollIntoView({ behavior: "smooth" });
+		}
+	</script>
+
 </head>
 <body>
 	
-	<!--PreLoader-->
-    <div class="loader">
-        <div class="loader-inner">
-            <div class="circle"></div>
-        </div>
-    </div>
-    <!--PreLoader Ends-->
+	
 	
 	<!-- header -->
 	<div class="top-header-area" id="sticker">
@@ -93,7 +94,7 @@
 							<h1>Fude's Authentic Japanese Cuisine</h1>
 							<div class="hero-btns">
 								
-								<a href="contact.html" class="bordered-btn">Book A Table</a>
+								<a onclick="scrollToElement()" class="bordered-btn">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -101,6 +102,37 @@
 			</div>
 		</div>
 	</div>
+
+	
+	<div id="target-element" class="abt-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<div class="abt-bg">
+						<a ><img src="assets/img/sushiset.png"></a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="abt-text">
+						<p class="top-sub">Since 2019</p>
+						<h2>We are <span class="orange-text">Fude</span></h2>
+						<p>Fude Sushi is a restaurant specializing in fresh sushi made from high-quality ingredients. Our menu features a wide selection of sushi rolls, nigiri, and sashimi made from the freshest fish. Our food is prepared daily with the utmost care and attention to make sure you get the best quality sushi experience. <br/>
+							<br/>
+							
+							Come and visit our soothing environment and delicious food at Fude Sushi!</p>
+						
+						<a href="about.html" class="boxed-btn mt-4">Book a table</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="shop-banner">
+    	<div class="container">
+        	
+        </div>
+    </section>
 	<!-- end hero area -->
 
 	<!--
@@ -245,46 +277,18 @@
 	<!-- end testimonail-section -->
 	
 	<!-- advertisement section -->
-	<div class="abt-section mb-150">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-12">
-					<div class="abt-bg">
-						<a ><img src="assets/img/sushiset.png"></a>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-12">
-					<div class="abt-text">
-						<p class="top-sub">Since 2019</p>
-						<h2>We are <span class="orange-text">Fude</span></h2>
-						<p>Fude Sushi is a restaurant specializing in providing fresh sushi made from high-quality ingredients. Our menu features a wide selection of sushi rolls, nigiri, and sashimi made from the freshest fish. Our food is prepared daily with the utmost care and attention to make sure you get the best quality sushi experience. <br/>
-							<br/>
-							
-							Come and visit our soothing environment and delicious food at Fude Sushi!</p>
-						
-						<a href="about.html" class="boxed-btn mt-4">Book a table</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<!-- end advertisement section -->
 	
 	<!-- shop banner -->
-	<section class="shop-banner">
-    	<div class="container">
-        	<h3>December sale is on! <br> with big <span class="orange-text">Discount...</span></h3>
-            <div class="sale-percent"><span>Sale! <br> Upto</span>50% <span>off</span></div>
-            <a href="shop.html" class="cart-btn btn-lg">Shop Now</a>
-        </div>
-    </section>
+	
 	<!-- end shop banner -->
 
 	<!-- latest news -->
-	<div class="latest-news pt-150 pb-150">
+	<div class="latest-news pt-100 pb-150 justify-content">
 		<div class="container">
 
-			<div class="row">
+			<div class="row ">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-title">	
 						<h3><span class="orange-text">Follow</span> Us</h3>
@@ -294,54 +298,24 @@
 			</div>
 
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news">
-						<a href="single-news.html"><div class="latest-news-bg news-bg-1"></div></a>
-						<div class="news-text-box">
-							<h3><a href="single-news.html">You will vainly look for fruit on it in autumn.</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-							</p>
-							<p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
-							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
+				
+				<div class="col-lg-4 col-md-6 offset-md-4 ">
 					<div class="single-latest-news">
 						<a href="single-news.html"><div class="latest-news-bg news-bg-2"></div></a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">A man's worth has its season, like tomato.</a></h3>
+							<h3><a href="single-news.html">Opening promotion! Bring 3 friends for a 20% discount</a></h3>
 							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
+								<span class="author"><i class="fas fa-user"></i> Fude</span>
 								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
 							</p>
-							<p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
-							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+							<p class="excerpt">For our opening month, you can bring 3 or more friends and get a 20% discount for the whole group!</p>
+							<a href="https://instagram.com" target="_blank" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-					<div class="single-latest-news">
-						<a href="single-news.html"><div class="latest-news-bg news-bg-3"></div></a>
-						<div class="news-text-box">
-							<h3><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-							</p>
-							<p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
-							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-						</div>
-					</div>
-				</div>
+				
 			</div>
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<a href="news.html" class="boxed-btn">More News</a>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 	<!-- end latest news -->
@@ -397,11 +371,11 @@
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">
 						<ul>
-							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+				
+						
+				
 						</ul>
 					</div>
 				</div>

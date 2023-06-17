@@ -1594,7 +1594,7 @@ div.owl-controls, .owl-controls div {
 }
 
 .news-bg-2 {
-  background-image: url(../img/latest-news/news-bg-2.jpg);
+  background-image: url(../img/latest-news/opening.jpg);
 }
 
 .news-bg-3 {
@@ -1668,7 +1668,7 @@ p.excerpt {
 }
 
 .single-artcile-bg {
-  background-image: url(../img/latest-news/news-bg-3.jpg);
+  background-image: url(../img/latest-news/opening.jpg);
   height: 450px;
 }
 
@@ -2117,7 +2117,7 @@ a.video-play-btn {
 .shop-banner {
   position: relative;
   background-color: #f5f5f5;
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/sushifriends.png);
   background-size: cover;
   padding: 110px 0px 115px;
 }
